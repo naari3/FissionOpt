@@ -30,6 +30,7 @@ namespace Fission {
     int limit[Air];
     double coolingRates[Cell];
     bool ensureActiveCoolerAccessible;
+    bool ensureEdgeOnlyAccessibleCheck;
     bool ensureHeatNeutral;
     int goal;
     bool symX, symY, symZ;

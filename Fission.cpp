@@ -109,6 +109,14 @@ namespace Fission {
   }
 
   bool Evaluator::checkAccessibility(int x, int y, int z) {
+    if (settings.ensureEdgeOnlyAccessibleCheck) {
+      return
+        x == 0 || y == 0 || z == 0 ||
+        x == settings.sizeX - 1 ||
+        y == settings.sizeY - 1 ||
+        z == settings.sizeZ - 1;
+    }
+
     if (!state->in_bounds(x, y, z))
       return true;
     if (visited(x, y, z))

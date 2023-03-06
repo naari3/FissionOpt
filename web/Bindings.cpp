@@ -124,6 +124,7 @@ EMSCRIPTEN_BINDINGS(FissionOpt) {
     .function("setLimit", &setLimit)
     .function("setRate", &setRate)
     .property("ensureActiveCoolerAccessible", &Fission::Settings::ensureActiveCoolerAccessible)
+    .property("ensureEdgeOnlyAccessibleCheck", &Fission::Settings::ensureEdgeOnlyAccessibleCheck)
     .property("ensureHeatNeutral", &Fission::Settings::ensureHeatNeutral)
     .property("goal", &Fission::Settings::goal)
     .property("symX", &Fission::Settings::symX)
