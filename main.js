@@ -396,6 +396,7 @@ $(() => { FissionOpt().then((FissionOpt) => {
         settings.fuelBasePower = parsePositiveFloat('Fuel Base Power', fuelBasePower.val());
         settings.fuelBaseHeat = parsePositiveFloat('Fuel Base Heat', fuelBaseHeat.val());
         settings.ensureActiveCoolerAccessible = $('#ensureActiveCoolerAccessible').is(':checked');
+        settings.ensureEdgeOnlyAccessibleCheck = $('#ensureEdgeOnlyAccessibleCheck').is(':checked');
         settings.ensureHeatNeutral = $('#ensureHeatNeutral').is(':checked');
         settings.goal = parseInt($('input[name=goal]:checked').val());
         settings.symX = $('#symX').is(':checked');
